@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: black;
+}
+
+h1 {
+  font-weight: 900;
+  color: purple;
+}
+
+p {
+  color: green;
+  text-align: justify;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 3rem;
+  width: 90%;
+  margin: 0 auto;
+
+  min-height: 100vh;
+}
+
+.site-wrapper > div {
+  flex: 1;
+}
+
+.text-italics {
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .site-wrapper {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .site-wrapper > div {
+    flex: 0;
+  }
+}
