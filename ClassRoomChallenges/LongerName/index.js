@@ -28,7 +28,7 @@ const friendNameLength = friendName.length;
 
 // IF-ELSE CONDITIONAL
 
-if (myName > friendName) {
+if (myNameLength > friendNameLength) {
   console.log(`${myName}'s name is longer than ${friendName}'s`);
 } else {
   console.log(`${friendName}'s name is longer than ${myName}'s`);
