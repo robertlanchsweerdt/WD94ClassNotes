@@ -38,3 +38,28 @@ if (myNameLength > friendNameLength) {
 myNameLength > friendNameLength
   ? console.log(`${myName}'s name is longer than ${friendName}'s`)
   : console.log(`${friendName}'s name is longer than ${myName}'s`);
+
+/* GOLD
+In the console log include how many letters difference there are between the names.
+Example Result: Adam's name is shorter than mine by 4 letters.
+There is also one additional case that should be handled that 
+has not been mentioned so far. See if you can add that to your conditional!
+*/
+
+if (myNameLength > friendNameLength) {
+  console.log(
+    `${myName}'s name is longer than ${friendName}'s name by ${
+      myNameLength - friendNameLength
+    } letter`
+  );
+} else if (friendNameLength > myNameLength) {
+  console.log(
+    `${friendName}'s name is longer than ${myName}'s name by ${
+      friendNameLength - myNameLength
+    } letter`
+  );
+} else {
+  console.log(
+    `${myName}'s name and ${friendName}'s name are the same length with ${myNameLength} characters`
+  );
+}
