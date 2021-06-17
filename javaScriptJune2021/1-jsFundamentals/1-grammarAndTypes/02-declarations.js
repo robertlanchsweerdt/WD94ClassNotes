@@ -10,6 +10,7 @@
 // What is a variable?
 
 // "a bucket filled with something"
+// keyword, name, assignment operator, value
 
 const a = 1;
 const b = 2;
