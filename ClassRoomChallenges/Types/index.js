@@ -34,21 +34,21 @@ and console logs the data type. If the value is not a string, number, boolean, o
 ​
 */
 
-const checkMe = someArr;
+const checkType = age;
 
-switch (typeof checkMe) {
+switch (typeof checkType) {
   case 'string':
-    console.log(` The typeof ${checkMe} is a string`);
+    console.log(` The typeof ${checkType} is a string`);
     break;
   case 'number':
-    console.log(` The typeof ${checkMe} is a number`);
+    console.log(` The typeof ${checkType} is a number`);
     break;
   case 'boolean':
-    console.log(` The typeof ${checkMe} is a boolean`);
+    console.log(` The typeof ${checkType} is a boolean`);
     break;
   case 'object':
-    console.log(` The typeof ${checkMe} is an object`);
+    console.log(` The typeof ${checkType} is an object`);
     break;
   default:
-    console.log(` The typeof ${checkMe} is unknown.  What are you?`);
+    console.log(` The typeof ${checkType} is unknown.  What are you?`);
 }
