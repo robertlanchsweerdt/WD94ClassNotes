@@ -34,7 +34,7 @@ and console logs the data type. If the value is not a string, number, boolean, o
 ​
 */
 
-const checkMe = foo;
+const checkMe = someArr;
 
 switch (typeof checkMe) {
   case 'string':
