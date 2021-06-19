@@ -8,6 +8,6 @@
  * 3. they usually, but not always, return some value;
  * 4. they can be invoked (called) as many times as we want to reduce code repetition
  *
- * When a function doesn't return anything, it's called a 'SIDE EFFECT'
+ * When a function doesn't RETURN anything, it's called a 'SIDE EFFECT'
  *
  */
