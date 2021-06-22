@@ -9,35 +9,37 @@
     Convert this to SWITCH STATEMENT and then a TERNARY
 */
 
-for (let fb = 0; fb <= 30; fb++) {
-  if (fb % 3 === 0 && fb % 5 === 0) {
-    console.log(`Fizz Buzz ${fb}`);
-  } else if (fb % 3 === 0) {
+const fb = 30;
+
+for (let i = 0; i <= fb; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log(`Fizz Buzz ${i}`);
+  } else if (i % 3 === 0) {
     console.log(`Fizz ${fb}`);
-  } else if (fb % 5 === 0) {
-    console.log(`Buzz ${fb}`);
+  } else if (i % 5 === 0) {
+    console.log(`Buzz ${i}`);
   }
 }
 
-for (let fb = 0; fb <= 30; fb++) {
+for (let i = 0; i <= fb; i++) {
   switch (true) {
-    case fb % 3 === 0 && fb % 5 === 0:
-      console.log(`Fizz Buzz ${fb}`);
+    case i % 3 === 0 && i % 5 === 0:
+      console.log(`Fizz Buzz ${i}`);
       break;
-    case fb % 3 === 0:
+    case i % 3 === 0:
       console.log(`Fizz ${fb}`);
       break;
-    case fb % 5 === 0:
-      console.log(`Buzz ${fb}`);
+    case i % 5 === 0:
+      console.log(`Buzz ${i}`);
   }
 }
 
-for (let fb = 0; fb <= 30; fb++) {
-  fb % 3 === 0 && fb % 5 === 0
-    ? console.log(`Fizz Buzz ${fb}`)
-    : fb % 3 === 0
-    ? console.log(`Fizz ${fb}`)
-    : fb % 5 === 0
-    ? console.log(`Buzz ${fb}`)
-    : console.log(`these numbers are neither evenly dividied by 3 or 5: ${fb}`);
+for (let i = 0; i <= fb; i++) {
+  i % 3 === 0 && i % 5 === 0
+    ? console.log(`Fizz Buzz ${i}`)
+    : i % 3 === 0
+    ? console.log(`Fizz ${i}`)
+    : i % 5 === 0
+    ? console.log(`Buzz ${i}`)
+    : console.log(`these numbers are neither evenly dividied by 3 or 5: ${i}`);
 }
