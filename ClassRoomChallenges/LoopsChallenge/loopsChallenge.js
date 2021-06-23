@@ -64,39 +64,37 @@ is a prime number,insert it in arr and using string interpolation -
 ​
 */
 
-const otherArr = [
-  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 41, 42, 43, 44, 45, 46, 47, 48, 49,
-];
+const foo = [2, 3, 4, 5, 7, 8, 9, 10, 11, 12];
 
-for (let i = 0; i < otherArr.length; i++) {
-  let isPrime = true;
-  if (otherArr[i] > 1) {
-    for (let j = 2; j < otherArr[i] - 1; j++) {
-      if (otherArr[i] % j === 0) {
-        isPrime = false;
-        break;
-      }
+function checkPrime(...num) {
+  if (num < 2) return;
+
+  const root = Math.ceil(Math.sqrt(num));
+
+  for (let i = 2; i <= root; i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(checkPrime(11));
+
+function checkPrime2(num) {
+  for (let i = 0; i < num.length; i++) {
+    if (num[i] < 2) return;
+
+    let isPrime = true;
+    const root = Math.ceil(Math.sqrt(num[i]));
+
+    for (let k = 2; k <= root; k++) {
+      if (num[i] % k === 0) isPrime = false;
     }
 
-    if (isPrime) {
-      console.log(`${otherArr[i]}`);
-    }
+    if (isPrime) console.log(num[i]);
+    if (isPrime) console.log(`The number ${num[i]} is a prime number`);
   }
 }
 
-for (let i = 0; i < otherArr.length; i++) {
-  let isPrime = true;
-
-  if (otherArr[i] !== 1) {
-    for (let j = 2; j < otherArr[i]; j++) {
-      if (otherArr[i] % j === 0) {
-        isPrime = false;
-        break;
-      }
-    }
-
-    if (isPrime) {
-      console.log(`${otherArr[i]}`);
-    }
-  }
-}
+checkPrime2(foo);
