@@ -3,9 +3,12 @@
  *
  * JS has both LOCAL and GLOBAL scope
  *
+ * scope is about how the code has access to the variables
+ *
  * var vs. let
- * var does not obey 'block' scope (what is inside curly braces)
- * let DOES obey 'block' scope
+ * var does not obey the enclosing 'block' scope (what is inside curly braces)
+ * var is scope to the nearest function block
+ * let DOES obey the enclosing 'block' scope
  *
  * Types of JS scope levels:
  *

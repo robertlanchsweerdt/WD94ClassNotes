@@ -23,3 +23,14 @@
 // STEP 3
 //add to your conditional to check if the string has more than 10 characters
 //if it does console log please type less
+
+/**
+ * ANOTHER CHALLENGE
+ */
+
+// Complete in a google doc
+
+// Area of a Trapezoid
+// Write a function that accepts the parameters b1, b2, h
+// Your function should console.log the area of a Trapezoid
+// A = 1/2(b1 + b2)h

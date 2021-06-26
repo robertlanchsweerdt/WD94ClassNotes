@@ -3,6 +3,9 @@
  * refers to a notation (data type) for representing a fixed value in source code.
  * a data type is a literal that holds a value in the source code
  *
+ * literal -- what we hard code into the variable compared to what
+ * dynamically is created
+ *
  *
  * toString() converts an Array to a single string
  *
