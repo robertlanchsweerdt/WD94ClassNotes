@@ -36,9 +36,13 @@
  *
  * 7. length -- method will count the number of items in an array; notice it does not use the () invocation;
  *
+ * 8. toString() -- converts array values into string output
+ *
  */
 
 let students = ['Tony', 'Mark', 23, true, ['Bob', 'Sue']];
+
+console.log(students.toString());
 
 console.log(typeof students);
 console.log(students instanceof Array);
