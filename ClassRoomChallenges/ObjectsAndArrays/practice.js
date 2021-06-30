@@ -38,3 +38,13 @@ console.log(gradebook[1].name, gradebook[1].grades[0].letterGrade);
 gradebook.forEach((person) => {
   console.log(person.name, person.subject);
 });
+
+const ascendingName = gradebook.sort((a, b) => {
+  if (b.name - a.name) {
+    return 1;
+  } else {
+    return -1;
+  }
+});
+
+console.log(ascendingName);
