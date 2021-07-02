@@ -1,0 +1,9 @@
+.coffee {
+  margin-top: 60px;
+}
+
+.coffee-title {
+  font-family: var(--font-one);
+  text-align: center;
+  margin-bottom: 1em;
+}

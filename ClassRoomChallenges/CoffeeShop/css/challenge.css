@@ -1,0 +1,21 @@
+.challenge {
+  margin-top: 60px;
+}
+
+.challenge-heading {
+  font-family: var(--font-one);
+}
+
+.challenge-heading,
+.challenge-para {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.progress {
+  height: 2rem;
+}
+
+.progress + .progress {
+  margin-top: 1.5rem;
+}
