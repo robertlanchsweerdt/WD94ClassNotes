@@ -33,7 +33,7 @@ function teamOneAdd() {
 
   console.log(teamOneAddButton.style.backgroundColor);
 
-  if (teamOneAddButton.style.backgroundColor !== 'green') {
+  if (teamOneAddButton.style.backgroundColor != 'green') {
     teamOneAddButton.style.backgroundColor = 'green';
   } else {
     teamOneAddButton.style.backgroundColor = 'blue';
@@ -45,7 +45,7 @@ function teamOneSub() {
   points -= 1;
   if (points >= 0) teamOnePoints.innerText = points;
 
-  if (teamOneSubButton.style.backgroundColor !== 'red') {
+  if (teamOneSubButton.style.backgroundColor != 'red') {
     teamOneSubButton.style.backgroundColor = 'red';
   } else {
     teamOneSubButton.style.backgroundColor = 'blue';
@@ -57,7 +57,7 @@ function teamTwoAdd() {
   points += 1;
   teamTwoPoints.innerText = points;
 
-  if (teamTwoAddButton.style.backgroundColor !== 'green') {
+  if (teamTwoAddButton.style.backgroundColor != 'green') {
     teamTwoAddButton.style.backgroundColor = 'green';
   } else {
     teamTwoAddButton.style.backgroundColor = 'blue';
@@ -69,7 +69,7 @@ function teamTwoSub() {
   points -= 1;
   if (points >= 0) teamTwoPoints.innerText = points;
 
-  if (teamTwoSubButton.style.backgroundColor !== 'red') {
+  if (teamTwoSubButton.style.backgroundColor != 'red') {
     teamTwoSubButton.style.backgroundColor = 'red';
   } else {
     teamTwoSubButton.style.backgroundColor = 'blue';
