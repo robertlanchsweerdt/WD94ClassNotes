@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Counter Buttons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Team 1</h1>
+                <p>Total Points: <span id="team1points">10</span></p>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" id="teamOneAddButton" type="button">
+                        Add Team 1 Button
+                    </button>
+                    <button class="btn btn-primary" onclick="teamOneSub()" id="teamOneSubButton" type="button">
+                        Subtract Team 1 Button
+                    </button>
+                </div>
+            </div>
+            <div class="col">
+                <h1>Team 2</h1>
+                <p>Total Points: <span id="team2points">10</span></p>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" id="teamTwoAddButton" type="button">
+                        Add Team 2 Button
+                    </button>
+                    <button class="btn btn-primary" onclick="teamTwoSub()" id="teamTwoSubButton" type="button">
+                        Subtract Team 2 Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
