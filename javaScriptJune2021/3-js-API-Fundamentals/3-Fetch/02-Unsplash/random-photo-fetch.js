@@ -7,11 +7,14 @@ fetch(UNSPLASH_API).then((response) => {
     return new Error(response);
   }
   console.log('Response:', response);
-  return response.blob().then((photoBlob) => {
-    console.log('My Blob:', photoBlob);
-    const objectURL = URL.createObjectURL(photoBlob);
-    console.log('Object URL:', objectURL);
-    randomImage.src = objectURL;
-    console.log('randomImage.src:', randomImage.src);
-  });
+  return response
+    .blob()
+    .then((photoBlob) => {
+      console.log('My Blob:', photoBlob);
+      const objectURL = URL.createObjectURL(photoBlob);
+      console.log('Object URL:', objectURL);
+      randomImage.src = objectURL;
+      console.log('randomImage.src:', randomImage.src);
+    })
+    .catch((err) => console.error(err));
 });
