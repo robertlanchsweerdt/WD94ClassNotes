@@ -1,7 +1,9 @@
+// VARIABLES
 const CHUCK_NORRIS_API = 'https://api.chucknorris.io/jokes/random';
 const displayFetch = document.getElementById('display-fetch');
 const btn = document.getElementById('button-fetch');
 
+// BUTTON LISTENER
 btn.addEventListener('click', getJokeAsync);
 
 function getJoke() {
@@ -24,11 +26,15 @@ async function getJokeAsync() {
   }
 }
 
+// DISPLAY JOKE ON PAGE
 function displayJoke(joke) {
+  //CHECK IF P VARIABLE EXISTS
   if (displayFetch.firstElementChild) {
+    // IF EXISTS, THEN REMOVE SO ONLY 1 JOKE IS SHOWN ON PAGE
     displayFetch.firstElementChild.remove();
   }
 
+  // CREATE P TAG, ADD JOKE TO P TAG, AND APPEND TO DIV
   const p = document.createElement('p');
   p.textContent = joke;
   displayFetch.appendChild(p);
