@@ -1,5 +1,5 @@
 const baseURL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json';
-const key = 'vKSNgGU04qcWjxQNneozZWjWXUAhPiw9';
+
 let url;
 
 // SEARCH FORM
