@@ -56,3 +56,4 @@ console.log(blueBerry.cost);
 console.log(myShop.location);
 console.log(myShop.getStatus());
 console.log(myShop.inventory.length);
+console.log(myShop.sellCupCake());
